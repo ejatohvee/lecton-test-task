@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class LectonTestTask {
     private static String formatYears(int years) {
         int lastDigit = years % 10;
-        int lastTwo = years % 100;
+        int lastTwoDigits = years % 100;
 
-        if (lastTwo >= 11 && lastTwo <= 14) return years + " лет";
+        if (lastTwoDigits >= 11 && lastTwoDigits <= 14) return years + " лет";
         return switch (lastDigit) {
             case 1 -> years + " год";
             case 2, 3, 4 -> years + " года";
